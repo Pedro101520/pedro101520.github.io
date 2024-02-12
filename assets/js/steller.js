@@ -1,3 +1,11 @@
+let docTitle = document.title;
+window.addEventListener("blur", () =>{
+	document.title = "Volte Aqui😥";
+})
+window.addEventListener("focus", () =>{
+	document.title = docTitle;
+})
+
 $(document).ready(function(){
 	$(".nav-link").on('click', function(event) {
 
